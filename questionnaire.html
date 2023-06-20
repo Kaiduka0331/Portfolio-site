@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アンケート</title>
+</head>
+<header>
+    突撃！みんなの夕ご飯(調査)
+</header>
+<body>
+    <p><form action="example.php" method="post" name="contact-form"></form><p>アンケート(仮)</p></p>
+    
+    名前:<input type="text" autocomplete="名字,名前 またはHN,NN">
+
+    <br>
+
+    性別:
+    <input type="radio" name="gender" value="男"> 男
+    <input type="radio" name="gender" value="女"> 女
+    <input type="radio" name="gender" value="その他"> その他
+
+   <p> Q.好きなジャンルの料理:</p>
+    <select name="food">
+        <option value="項目を選択">項目を選択</option>
+        <option value="中華料理">中華料理</option>
+        <option value="インド料理">インド料理</option>
+        <option value="アメリカ料理">アメリカ料理</option>
+        <option value="イタリア料理">イタリア料理</option>
+        <option value="その他">その他</option>
+    </select>
+    <br>
+    ※その他を選択された方は、記入をお願いします。(任意)
+
+    <br><textarea name="message" autocomplete="メッセージを入力"></textarea>
+
+    <p>Q.1日で食事の量が最も多いのは:</p>
+    <select name="timing">
+        <option value="項目を選択">項目を選択</option>
+        <option value="朝">朝</option>
+        <option value="昼">昼</option>
+        <option value="夜">夜</option>
+        <option value="その他">その他</option>
+    </select>
+    <br>※その他を選択された方は、記入をお願いします。(任意)
+    <br><textarea name="message" autocomplete="メッセージを入力"></textarea>
+
+    <br><input type="submit" value="送信する">
+    
+</body>
+</html>
